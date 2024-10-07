@@ -174,6 +174,66 @@
             </section>
           </div>
           <div class="carousel-item">
+            <section id="filter-includes" class="container col-8 mt-5 mb-4">
+              <div class="row mx-0 mb-5">
+                <div class="col-md-6">
+                  <h2 class="text-primary">Método Filter</h2>
+                  <p>Crea un nuevo array con los elementos que cumplen la condición definida en la función.
+                  </p>
+                  <h4>Sintaxis</h4>
+                  <p>var newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
+                  </p>
+                  <a class="btn btn-outline-primary"
+                    href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+                    target="_blank" role="button">Leer documentación</a>
+                </div>
+                <div class="col-md-6">
+                  <h2 class="text-primary">Método Includes</h2>
+                  <p>Determina si una matriz incluye un determinado elemento, devuelve true o false.
+                  </p>
+                  <h4>Sintaxis</h4>
+                  <p>arr.includes(searchElement[, fromIndex])
+                  </p>
+                  <a class="btn btn-outline-primary"
+                    href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+                    target="_blank" role="button">Leer documentación</a>
+                </div>
+              </div>
+              <div class="row">
+                <!-- Ejercicio 4-->
+                <div class="col-md-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Instrucciones</h5>
+                      <p class="card-text">
+                        Cree un programa que recorra las 2 matrices; si hay cursos en común, imprímalos en la consola.
+                        <br>
+                        <br> let student1Courses = ['Math', 'English', 'Programming'];
+                        <br> let student2Courses = ['Geography', 'Spanish', 'Programming'];
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Resultado 4-->
+                <div class="col-md-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Código</h5>
+                      <code class="card-text">
+                        const findCommonCourses = student1Courses.filter((course) => student2Courses.includes(course));
+                      </code>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Resultado</h5>
+                      <p id="result-filter-includes" class="card-text">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
           <div class="carousel-item">
           </div>
