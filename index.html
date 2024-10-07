@@ -236,6 +236,119 @@
             </section>
           </div>
           <div class="carousel-item">
+            <section id="more-methods" class="container col-8 mt-5 mb-4">
+              <div class="mt-5 mb-2">
+                  <h2 class="text-primary">Más ejercicios con métodos Array</h2>
+                  <h4>Instrucciones</h4>
+                  <p>
+                      Para cada uno de los ejercicios siguientes, suponga que comienza con la siguiente matriz:
+                      <br>let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];</p></p>
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              <strong>Ejercicio 1 - </strong> Escribe un comando que imprima todas las personas en la lista.
+                          </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                              <code>const resultContainer = document.getElementById('result-people');
+                              <br>resultContainer.textContent = `Lista de personas: ${people.join(', ')}</code>
+                              <p id="result-people" ></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              <strong>Ejercicio 2 - </strong>Escribe el comando para eliminar "Dani" de la matriz.
+                          </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                              <code>people.splice(1, 1);</code>
+                              <p id="result-dani"</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <strong>Ejercicio 3 - </strong>Escribe el comando para eliminar "Juan" de la matriz.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                          <code>people.splice(2, 1);</code>
+                              <p id="result-juan"</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          <strong>Ejercicio 4 - </strong>Escribe el comando para mover "Luis" al frente de la matriz.
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                          <code>people.splice(1, 1);
+                              <br>people.unshift("Luis");
+                          </code>
+                          <p id="result-luis"></p>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                          <strong>Ejercicio 5 - </strong> Escribe el comando para agregar su nombre al final de la matriz.
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                              <code>people.push("Fernanda");</code>
+                              <p id="result-my-name"></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                          <strong>Ejercicio 6 - </strong>Usando un bucle, itere a través de esta matriz y después de console.log "Maria", salga del bucle.
+                        </button>
+                      </h2>
+                      <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <code>
+                              for (let i = 0; i < people.length; i++) {
+                                  <br>  console.log(people[i]);
+                                  <br> if (people[i] === "Maria") {
+                                  <br>     break; // 
+                                  <br>}
+                                  <br>}
+                          </code>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                          <strong>Ejercicio 7 - </strong>Escribe el comando que da el indexOf donde se encuentra "María".
+                        </button>
+                      </h2>
+                      <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <code>people.indexOf("Maria");</code>
+                          <p id="result-index-maria"></p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </section>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
