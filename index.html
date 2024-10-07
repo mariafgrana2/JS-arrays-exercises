@@ -17,6 +17,57 @@
       <div id="carouselExample" class="carousel slide carousel-dark slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <section id="join" class="container col-8 mt-5 mb-4">
+              <div class="mt-5 mb-5">
+                <h2 class="text-primary">Método Join</h2>
+                <p>Une los elementos de un array en una cadena con un separador especificado y la devuelve.
+                </p>
+                <h4>Sintaxis</h4>
+                <p>arr.join([separator])
+                </p>
+                <a class="btn btn-outline-primary"
+                  href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/join" target="_blank"
+                  role="button">Leer documentación</a>
+              </div>
+              <div class="row">
+                <!-- Ejercicio 1-->
+                <div class="col-md-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Instrucciones</h5>
+                      <p class="card-text">
+                        Complete la función para imprimir la cadena: This is a sentence. Copie el código a continuación en su
+                        espacio de trabajo:
+                        <br>
+                        <br>let arr = ["This", "is", "a", "sentence."];
+                        <br>function printOutString() {
+                        <br><span class="text-primary">// your code here </span>
+                        <br>}
+                        <br>printOutString();
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Resultado 1-->
+                <div class="col-md-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Código</h5>
+                      <code class="card-text">
+                        let arr = ["This", "is", "a", "sentence."];
+                        <br>arr.join(' ');
+                      </code>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Resultado</h5>
+                      <p id="result-join" class="card-text">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </section>
           </div>
           <div class="carousel-item">
           </div>
