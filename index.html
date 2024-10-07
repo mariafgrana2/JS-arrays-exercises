@@ -70,6 +70,59 @@
             </section>
           </div>
           <div class="carousel-item">
+            <section id="map" class="container col-8 mt-5 mb-4">
+              <div class="mt-5 mb-5">
+                <h2 class="text-primary">Método Map</h2>
+                <p>Crea un nuevo array con los resultados de aplicar la función a cada elemento del array original.
+                </p>
+                <h4>Sintaxis</h4>
+                <p>var nuevo_array = arr.map(function callback(currentValue, index, array) {
+                  <br>// Elemento devuelto de nuevo_array
+                  <br>}
+                </p>
+                <a class="btn btn-outline-primary"
+                  href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank"
+                  role="button">Leer documentación</a>
+              </div>
+              <div class="row">
+                <!-- Ejercicio 2-->
+                <div class="col-md-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Instrucciones</h5>
+                      <p class="card-text">
+                        Escriba una función que:
+                      </p>
+                      <ul>
+                        <li>Tome una matriz de números.</li>
+                        <li>Duplique el valor de cada número de la matriz.</li>
+                        <li>Imprima la nueva matriz actualizada.</li>
+                      </ul>
+                      <p class="card-text"><small class="text-body-secondary"> Ejemplo: Con el arreglo [1, 2, 4, 5]. El resultado
+                          debe ser [2, 4, 8, 10]</small></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Resultado 2-->
+                <div class="col-md-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Código</h5>
+                      <code class="card-text">
+                        const numbers = [5, 10, 15, 20, 25];
+                        <br>const doubles = numbers.map((num) => num * 2);
+                      </code>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Resultado</h5>
+                      <p id="result-map" class="card-text">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </section>
           </div>
           <div class="carousel-item">
           </div>
