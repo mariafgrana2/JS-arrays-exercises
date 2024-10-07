@@ -125,6 +125,53 @@
             </section>
           </div>
           <div class="carousel-item">
+            <section id="reduce" class="container col-8 mt-5 mb-4">
+              <div class="mt-5 mb-5">
+                <h2 class="text-primary">Método Reduce</h2>
+                <p>Aplica una función reductora a cada elemento de un array y devuelve un único valor.
+                </p>
+                <h4>Sintaxis</h4>
+                <p>arr.reduce(callback(acumulador, valorActual[, índice[, array]])[, valorInicial])
+                </p>
+                <a class="btn btn-outline-primary"
+                  href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+                  target="_blank" role="button">Leer documentación</a>
+              </div>
+              <div class="row">
+                <!-- Ejercicio 3-->
+                <div class="col-md-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Instrucciones</h5>
+                      <p class="card-text">
+                        Escriba un programa para calcular la suma y el producto (multiplicación) de una matriz de números. Imprima
+                        la suma y el producto.
+                      </p>
+                      <p class="card-text"><small class="text-body-secondary">
+                          Ejemplo: Con un arreglo [1, 2, 3, 4] La suma es 10. El producto es 24.</small></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Resultado 3-->
+                <div class="col-md-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Código</h5>
+                      <code class="card-text">
+                        const sumResult = arr.reduce((acc, current) => acc + current);
+                        <br>const productResult = arr.reduce((acc, current) => acc * current);
+                        </code>
+                    </div>
+                  </div>
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Resultado</h5>
+                      <p id="result-reduce" class="card-text">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </section>
           </div>
           <div class="carousel-item">
           </div>
